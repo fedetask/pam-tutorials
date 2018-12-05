@@ -1,0 +1,5 @@
+#This file must be put in /etc/pam.h/
+
+auth        required       pam_unix.so
+account     required       pam_unix.so
+password    required       pam_unix.so
