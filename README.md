@@ -10,3 +10,14 @@ Contains a simple C program that does authentication against a PAM configuration
 Requires to have the `libpam-dev` package installed. Check the correct name for your distribution
 #### Building
 Run `gcc -o run_pam.o main.c -lpam -lpam_misc`
+
+## pam-module
+Contains a simple PAM module that performs authentication, account, session and password.
+#### Contents:
+- main.c is the module code
+#### Dependencies
+Requires `libpam-dev` package. Check the correct name for your distribution
+#### Building
+Run:
+`gcc -fPIC -fno-stack-protector -c src/main.c` to compile the module
+`sudo ld -x --shared -o /lib/x86_64-linux-gnu/security/pam_example.so src/main.o` to create the shared object and install it under `/lib/x86_64-linux-gnu/security/`. Check that this folder is the correct pam modules folder for your system.
