@@ -1,5 +1,5 @@
 # Linux PAM tutorials
-This repo contains the code from my [Linux PAM tutorials](https://github.com/fedetask/pam-tutorials/blob/master/TutorialsIndex.md). Follow my blog, [fedetask useless blog](fedetask.com) and subscribe to read my new posts!
+This repo contains the code from my [Linux PAM tutorials](https://github.com/fedetask/pam-tutorials/blob/master/TutorialsIndex.md). Follow my blog, [fedetask useless blog](http://fedetask.com) and subscribe to read my new posts!
 
 ## pam-application
 Contains a simple C program that does authentication against a PAM configuration file.
