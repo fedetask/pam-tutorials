@@ -20,4 +20,4 @@ Requires `libpam-dev` package. Check the correct name for your distribution
 #### Building
 Run:
 `gcc -fPIC -fno-stack-protector -c src/main.c` to compile the module
-`sudo ld -x --shared -o /lib/x86_64-linux-gnu/security/pam_example.so src/main.o` to create the shared object and install it under `/lib/x86_64-linux-gnu/security/`. Check that this folder is the correct pam modules folder for your system.
+`sudo ld -x --shared -o /lib/x86_64-linux-gnu/security/pam_example.so main.o` to create the shared object and install it under `/lib/x86_64-linux-gnu/security/`. Check that this folder is the correct pam modules folder for your system.
