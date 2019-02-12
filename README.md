@@ -21,7 +21,7 @@ Requires `libpam-dev` package. Check the correct name for your distribution
 Run:
 
 ```bash
-gcc -fPIC -fno-stack-protector -c src/main.c` 
+gcc -fPIC -fno-stack-protector -c src/main.c 
 ```
 
 to compile the module and then
